@@ -1,7 +1,11 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
 <html>
 <head></head>
 <body>
-    <h1>Тут будут контакты</h1>
+{% block content %}
+
+<h1>{{html_map|safe}}</h1>
+{% endblock %}
 </body>
 </html>
