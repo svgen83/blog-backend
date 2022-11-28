@@ -13,9 +13,9 @@
             <div class="card blog__slide text-center">
               <div class="blog__slide__img">
 			  {% if post.image_url%}
-                <img class="card-img rounded-0" src="{{post.image_url}}" alt="">
+                <img class="card-img rounded-0" src="{{post.image_url}}" alt="картинка публикации">
 				{% else %}
-				<img class="card-img rounded-0" src="{%static 'img/banner/blog.png'%}" alt="">
+				<img class="card-img rounded-0" src="{%static 'img/banner/blog.png'%}" alt="картинка публикации по умолчанию">
 				{% endif %}
               </div>
               <div class="blog__slide__content">
@@ -39,9 +39,9 @@
             <div class="single-recent-blog-post">
               <div class="thumb">
 			   {% if fresh_post.image_url%}
-                <img class="img-fluid" src="{{fresh_post.image_url}}" alt="">
+                <img class="img-fluid" src="{{fresh_post.image_url}}" alt="картинка публикации">
 				{% else %}
-				<img class="img-fluid" src="{%static 'img/banner/blog.png'%}" alt="">
+				<img class="img-fluid" src="{%static 'img/banner/blog.png'%}" alt="картинка публикации по умолчанию">
 				{% endif %}
                 <ul class="thumb-info" style="max-width: 550px;">
                   <li><a href="#"><i class="ti-user"></i>{{ fresh_post.author }}</a></li>
