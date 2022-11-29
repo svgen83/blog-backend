@@ -33,9 +33,9 @@
 	      <div class="col-lg-8">
 	        <div class="main_blog_details">
 	          {% if post.image_url %}
-	            <img class="img-fluid" src="{% static 'post.image_url' %}" alt="картинка публикации">
+	            <img class="img-fluid" src="{{post.image_url}}" alt="картинка публикации">
 	          {% else %}
-	            <img class="img-fluid" src="{%static 'img/banner/blog.png'%}" alt="картинка публикации по умолчанию">
+	            <img class="img-fluid" src="{% static 'img/banner/blog.png' %}" alt="картинка публикации по умолчанию">
 	          {% endif %}
 	          <h4>{{post.title}}</h4>
 	          <div class="user_details">
